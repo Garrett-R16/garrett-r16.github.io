@@ -6,10 +6,10 @@
 }
 /*    margin: 0 1.8rem 0 1.8rem;*/
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: -2
+    z-index: -4;
 }
 
 #header {
@@ -18,6 +18,15 @@ canvas {
     height: 70vh;
     margin: 0;
     margin-bottom: 10vh;
+    overflow: hidden;
+}
+
+#header video {
+    object-fit: cover;
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    z-index: -3;
 }
 
 #header::after {
@@ -25,7 +34,7 @@ canvas {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20vh;
+    height: 70vh;
     background: linear-gradient(to bottom, rgba(14,17,15,0), rgba(14,17,15,1));
     z-index: -1;
 }
@@ -244,6 +253,16 @@ section {
     padding-bottom: 1rem;
     display: flex;
     flex-flow: column;
+}
+
+.infoSec img {
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    height: 14em;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    opacity: 60%;
 }
 
 .link {
