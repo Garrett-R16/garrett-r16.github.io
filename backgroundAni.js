@@ -20,13 +20,13 @@ function setup() {
 
 function setResolution() {
     w = document.documentElement.clientWidth;
-    h = document.documentElement.clientHeight*0.7;
+    h = document.documentElement.clientHeight;
     if (w > 1200) {
-        rez = 20;
+        rez = 38;
     } else if (w > 400) {
-        rez = w/60
+        rez = w/(1200/38)
     } else {
-        rez=8;
+        rez=400/(1200/38);
     }
 }
 
@@ -55,7 +55,7 @@ window.onresize = () => {
 function draw() {
     background('#0E110F');
     strokeWeight(2);
-    stroke('#5F5F5F');
+    stroke('#525252');
     let xoff = 0;
     for (let i = 0; i < cols; i++) {
         xoff+=increment;

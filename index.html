@@ -13,14 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="shortcut icon" type="x-icon" href="logo_noBack.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header id="header">
         <!-- <script src="backgroundAni.js"></script> -->
-        <img src="TVC_testReg.gif" alt="Description of the GIF">
+        <video autoplay muted loop id="myVideo">
+            <source src="testV3.mp4" type="video/mp4">
+        </video>
         <div id="headerInfo">
             <p id="title">Hello, I'm <span>Garrett</span></p>
             <p id="desc"><em>an engineer <a id="pLink" href="https://www.purdue.edu/" target=”_blank”>@Purdue</a></em></p>
@@ -55,6 +57,9 @@
             </div>
         </div>
     </header>
+
+    <script src="backgroundAni.js"></script>
+
     <section id="about">
         <div>
             <div class="titles">
@@ -63,7 +68,7 @@
                 </p>
             </div>
             <p class="infoTxt">
-                Hi! My name is Garrett and I love to explore how things work, which is why you'll often find me learning about new technology and discoveries regarding topics like space, rocketry, and AI. Particularly, I'm interested in hardware and control systems for robotics and rockets. I've even been developing my own thrust-vectored model rocket (<a href=#Projects class="link">see X-Step</a>) to deepen my knowledge in this area!
+                Hi! My name is Garrett and I love to explore how things work, which is why you'll often find me learning about new technology and discoveries regarding topics like space, rocketry, and AI. Particularly, I'm interested in hardware and control systems for robotics and rockets. I've even been developing my own thrust-vectored model rocket (<a href=#Projects class="link">see Elevate</a>) to deepen my knowledge in this area!
             </p>
             <p class="infoTxt">
                 <!-- <br>
@@ -82,9 +87,10 @@
                 Education
             </p>
         </div>
+
         <div class="infoSec">
             <p class="subTitle">
-                Purdue University, West Lafayette, IN <span>2024-2028</span>
+                Purdue University, West Lafayette, IN<span>2024 - 2027</span>
             </p>
             <p class="subSubTitle">
                 Bachelor's Degree in Engineering
@@ -96,9 +102,10 @@
                 Relevant Coursework (Currently Taking): CS 159 (Tested Out), Calculus 3, The Data Mine Seminar, Introduction to Entrepreneurship
             </p>
         </div>
+
         <div class="infoSec">
             <p class="subTitle">
-                Chelmsford High School <span>2020-2024</span>
+                Chelmsford High School <span>2020 - 2024</span>
             </p>
             <p class="subSubTitle">
                 Capstone Diploma
@@ -122,18 +129,51 @@
         </div>
         <div class="infoSec">
             <p class="subTitle">
-                The Data Mine, Purdue University <span>August 2024 - May 2025</span>
+                The Purdue Space Program<span>August 2024 - Present</span>
+            </p>
+            <p class="subSubTitle">
+                Active Controls Subteam, GNC and Avionics Engineer
+            </p>
+            <p class="infoTxt">
+                Creating flight computers and modeling rockets.
+            </p>
+            <div class="pSkills">
+                <p>
+                    Altium Designer
+                </p>
+                <p>
+                    Simulink
+                </p>
+                <p>
+                    C++
+                </p>
+            </div>
+        </div>
+        <div class="infoSec">
+            <p class="subTitle">
+                The Data Mine, Purdue University<span>August 2024 - Present</span>
             </p>
             <p class="subSubTitle">
                 Undergraduate Data Science Researcher (Corporate Partners)
             </p>
             <p class="infoTxt">
-                Working in a diverse team to collaborate with <a href="https://www.viasat.com/" class="link" target="blank">Viasat</a> and determine a sustainable carrying capacity for space.
+                Working with <a href="https://www.viasat.com/" class="link" target="blank">Viasat</a> under The Data Mine to determine a sustainable carrying capacity for space using techniques like Monte Carlo and Machine Learning.
             </p>
+            <div class="pSkills">
+                <p>
+                    Python
+                </p>
+                <p>
+                    Monte Carlo
+                </p>
+                <p>
+                    sgp4 (satellite propagation)
+                </p>
+            </div>
         </div>
         <div class="infoSec">
             <p class="subTitle">
-                Chelmsford Swim and Tennis Club <span>Summer 2023 and 2024</span>
+                Chelmsford Swim and Tennis Club<span>Summer 2023 and 2024</span>
             </p>
             <p class="subSubTitle">
                 Tennis Coach
@@ -148,13 +188,13 @@
         </div>
         <div class="infoSec">
             <p class="subTitle">
-                Drane Engineering <span>May 2023 - January 2024</span>
+                Drane Engineering<span>May 2023 - January 2024</span>
             </p>
             <p class="subSubTitle">
                 Intern/Volunteer
             </p>
             <p class="infoTxt">
-                Collaborated with a diverse team to develop an assistive robotic arm for those with neurodegenerative diseases (emphasis on ALS); researched eye-tracking and assistive device technology; designed documentation website mock-ups; <a href="https://github.com/Garrett-R16/DE-GUI" target="_blank" class="link">developed a rudimentary GUI to interact with the device</a> using Python, PyQt, and OpenCV.
+                Collaborated with a diverse team to develop an assistive robotic arm for those with neurodegenerative diseases (emphasis on ALS). While a part of the project, I researched eye-tracking and assistive device technology, designed documentation website mock-ups, and even <a href="https://github.com/Garrett-R16/DE-GUI" target="_blank" class="link">developed a rudimentary GUI to interact with the device</a> using Python, PyQt, and OpenCV.
             </p>
             <p class="infoTxt">
                 <a href="https://www.draneengineering.com/s-projects-side-by-side" class="link" target="_blank">See Project Website</a>
@@ -189,9 +229,10 @@
                 <p class="subTitle">
                     <a href="https://arxiv.org/abs/2409.09445" target="_blank">Sustainability Research</a>
                 </p>
+                <img src="thumbnail1.jpg">
                 <div class="xtraPad">
                     <p class="infoTxt">
-                        Characterized the material and mechanical properties of vPP-GF and rPP-GF filaments to explore a potential ocean plastic treatment; coordinated with faculty at UMASS Lowell to perform sample testing; <a href="https://arxiv.org/abs/2409.09445" target="_blank" class="link">wrote a 5000+ word academic paper using LaTeX</a>; generated detailed figures using Python/Matplotlib; <a href="https://youtu.be/1YFS3P_NLoE" target="_blank" class="link">presented and defended my research.</a>.
+                        a paper I authored on the potential of recycling PP from fishnet/rope and reinforcing it with glass fiber (GF) in the form of 3D printer filaments as a way to reduce/prevent ocean plastic. I also <a href="https://youtu.be/1YFS3P_NLoE" target="_blank" class="link">presented and defended my research.</a>
                     </p>
                 </div>
                 <div class="pSkills">
@@ -216,21 +257,21 @@
                     <p>
                         LaTeX
                     </p>
-                    
                 </div>
             </div>
             <div class="infoSec">
                 <p class="subTitle">
-                    <a href="https://github.com/Garrett-R16/X-Step" target="_blank">X-Step</a>
+                    <a href="https://github.com/Garrett-R16/X-Step" target="_blank">Elevate</a>
                 </p>
+                <img src="picDiff.png">
                 <div class="xtraPad">
                     <p class="infoTxt">
-                        Designed X-Step, a thrust-vectored model rocket: created the EVA Flight Computer, a 4-layer PCB which directly implements sensors, servo outputs, and a microcontoller onto a single device; utilized a state-system approach for flight software; developed, simulated, and implemented a direct quaternion PID controller to control rocket attitude.
+                        Elevate is a thrust-vectored model rocket which leverages a 2-axis gimbal mount, <a href="https://www.youtube.com/watch?v=PTA0meSgiaA&t=1s" target="_blank" class="link">the EVA flight computer,</a> and a direct quaternion controller to stabilize itself during flight.
                     </p>
                 </div>
                 <div class="pSkills">
                     <p>
-                        Fusion 360 Electronics/Eagle
+                        EDAs
                     </p>
                     <p>
                         PCB design
@@ -245,16 +286,16 @@
                         C++
                     </p>
                     <p>
+                        State machines
+                    </p>
+                    <p>
                         Quaternions
                     </p>
                     <p>
-                        PID control
+                        Controller Design/Simulation
                     </p>
                     <p>
                         Simulink
-                    </p>
-                    <p>
-                        State machines
                     </p>
                 </div>
             </div>
@@ -264,7 +305,7 @@
                 </p>
                 <div class="xtraPad">
                     <p class="infoTxt">
-                        Designed a 3D-printed gimbaled TVC mount for 24 - 29mm motors capable of actuating &#177;6 degrees in X and Y; created protoboard flight computer; developed a test mount and <a href="https://www.youtube.com/watch?v=WfjEVA648XQ" class="link" target="_blank">performed static-fire tests.</a>
+                        a 3D-printed TVC gimbal mount capable of holding 24 - 29mm rocket motors and actuating &#177;6 degrees in X and Y that I performed <a href="https://www.youtube.com/watch?v=WfjEVA648XQ" class="link" target="_blank">static-fire tests</a> on using a custom test mount and protoboard flight computer.
                     </p>
                 </div>
                 <div class="pSkills">
@@ -284,11 +325,11 @@
             </div>
             <div class="infoSec">
                 <p class="subTitle">
-                    <a href="https://github.com/Garrett-R16/Tab-Subgroups-Extension" target="_blank">Nested Subgroups Extension</a>
+                    <a href="https://github.com/Garrett-R16/Tab-Subgroups-Extension" target="_blank">MoreGroups</a>
                 </p>
                 <div class="xtraPad">
                     <p class="infoTxt">
-                        Developed a Google extension to extend the capabilities of tabGroups by allowing users to nest groups (i.e., subgroups, sub-subgroups, and so on); <a href="https://chromewebstore.google.com/detail/moregroups-subgroup-your/djbmocfpfgbhcglagcibhagfnehcbkfc" class="link" target="_blank">published it to the Chrome Web Store.</a>
+                        a Google extension to extend the capabilities of tabGroups by allowing users to nest groups (i.e., subgroups, sub-subgroups, and so on) that is <a href="https://chromewebstore.google.com/detail/moregroups-subgroup-your/djbmocfpfgbhcglagcibhagfnehcbkfc" class="link" target="_blank">published to the Chrome Web Store.</a>
                     </p>
                 </div>
                 <div class="pSkills">

@@ -6,10 +6,10 @@
 }
 /*    margin: 0 1.8rem 0 1.8rem;*/
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: -2;
+    z-index: -4;
 }
 
 #header {
@@ -21,10 +21,10 @@ canvas {
     overflow: hidden;
 }
 
-#header img {
-    top: -20%;
+#header video {
     object-fit: cover;
     position: absolute;
+    height: 70vh;
     width: 100vw;
     z-index: -3;
 }
@@ -253,6 +253,16 @@ section {
     padding-bottom: 1rem;
     display: flex;
     flex-flow: column;
+}
+
+.infoSec img {
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    height: 14em;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    opacity: 60%;
 }
 
 .link {
