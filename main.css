@@ -256,10 +256,11 @@ section {
 }
 
 .infoSec img {
+    width: 100%;
     margin-top: 0.8rem;
     margin-bottom: 0.3rem;
     display: flex;
-    height: 14em;
+    height: 15em;
     object-fit: cover;
     border-radius: 0.5rem;
     opacity: 60%;
